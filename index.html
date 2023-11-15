@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./src/app/dist/output.css">
+  <script src="./src/app/js/script.js" defer></script>
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class=" min-h-full font-rorbo sm:bg-Dark_Slate_Grey sm:px-16 sm:py-36 ">
+  
+  <main class="sm:grid sm:bg-white sm:max-w-[890px] mx-auto sm:rounded-2xl sm:grid-cols-2 sm:p-6 sm:gap-x-12">
+
+    <div class="image-sec mb-6 sm:mb-0 w-full" id="img_1">
+      <img src="./assets/images/illustration-sign-up-mobile.svg" alt="" class="sm:hidden w-full">
+    </div>
+
+    <div class="sm:col-start-2 sm:row-start-1 w-full " id="img_2">
+      <img src="./assets/images/illustration-sign-up-desktop.svg" alt="" class="hidden sm:block w-full">
+    </div>
+
+    <div class="para-sec px-5 sm:row-start-1 sm:col-start-1 sm:px-0 sm:pt-16 sm:ps-7 " id="para">
+      <h1 class="font-bold text-4xl mb-4 sm:text-[2.7rem] sm:mb-6">Stay updated!</h1>
+      <p class="mb-4 text-[1rem]">Join 60,000+ product managers receiving monthly updates on:</p>
+
+      <ul class="mb-7">
+
+        <li>
+
+          <div class="flex gap-4 mb-2 sm:mb-4">
+            <div>
+              <img src="./assets/images/icon-list.svg" alt="" class="">
+            </div>
+            <p>  Product discovery and building what matters</p>
+          </div>
+
+          <div class="flex gap-4 mb-2 sm:mb-4">
+            <div>
+              <img src="./assets/images/icon-list.svg" alt="">
+            </div>
+            <p>  
+              Measuring to ensure updates are a success</p>
+          </div>
+
+          <div class="flex gap-4 sm:mb-4">
+            <div>
+              <img src="./assets/images/icon-list.svg" alt="" class="w-[1.2rem]">
+            </div>
+            <p>And much more!</p>
+          </div>
+
+        </li>
+      </ul>
+
+      <form action="#" class="mb-4">
+        <p class="text-[12px] font-bold mb-5 sm:text-[14px] ">Email address</p>
+        <input type="text" placeholder="email@company.com" class="border px-4 py-3 text-[14px] w-full mb-5 rounded-lg sm:px-5 sm:py-4 sm:mb-6 outline-none hover:outline-Dark_Slate_Grey hover:border-none cursor-pointer" id="email"><br>
+        <input type="submit" value=" Subscribe to monthly newsletter" class="bg-Dark_Slate_Grey px-2 py-3 w-full text-white text-[1rem] font-semibold rounded-lg  sm:px-5 sm:py-4 sm:mb-6 hover:bg-gradient-to-l from-Tomato to-rose-500 hover:shadow-Tomato shadow-lg transition-all duration-150 ease-linear cursor-pointer " id="submit">
+      </form>
+
+    </div>
+
+  </main>
+  <div class="">
+    <div class="sucess-state text-left px-5 pt-36  sm:pt-9  hidden bg-white sm:mx-auto sm:max-w-[480px] sm:px-12 sm:py-12 sm:rounded-3xl" id="hiden">
+      <img src="./assets/images/icon-success.svg" alt="" class="w-[3.5rem] mb-8">
+      <h1 class="font-bold text-4xl w-72 mb-7 sm:max-w-[400px]">Thanks for subscribing!</h1>
+      <p class="mb-52 sm:mb-8" id="text"></p>
+
+      <button class="bg-Dark_Slate_Grey text-white w-full py-3 font-semibold rounded-lg  hover:bg-gradient-to-l from-Tomato to-rose-500 hover:shadow-Tomato shadow-lg transition-all duration-150 ease-linear cursor-pointer">Dismiss message</button>
+    </div>
+  </div>
+</body>
+</html>
